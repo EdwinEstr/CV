@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Mi primer Portfolio web </title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="manifest" href="manifest.json">
+
+</head>
+<body>
+    <!--ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Edwin</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/Perfil.jpeg" alt="">
+            </div>
+            <h1>EDWIN EDUARDO</h1>
+            <h2>Tecnico superior Universitario</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://github.com/EdwinEstr"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/edwin-eduardo-estrada-calder%C3%B3n-0936a415b/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, mi nombre es Edwin Eduardo.</span> Soy un joven universitario, con muchas ganas de emprendimiento y de aprender cosas nuevas. .</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            06-02-1999
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            722 126 4683
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            edwin.eduardo@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            https://github.com/EdwinEstr
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            San Mateo atenco.
+                        </li>
+                       
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+         
+
+                <button>
+                  Descargar CV <i class="fa-solid fa-download"></i>
+                  <span class="overlay"></span>
+                </button>
+              </a>  
+        </div>
+    </section>
+
+  
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>HABILIDADES</h2>
+            <div class="fila">
+                <!-- THabilidades tecnicas -->
+                <div class="col">
+                    <h3>Habilidades Tecnicas</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>10%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>25%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Habilidades Profecionales -->
+                <div class="col">
+                    <h3>HABILIDADES PROFECIONALES</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Ingenieria Industrial</h4>
+                        <span class="casa">Universidad Autonoma del Estado de Mexico</span>
+                        <span class="fecha">2017 - 2018</span>
+                        <p>Tengo una carrera trunca de ingeniero industrial, en la cual me enseñaron el manejo de proyectos asi como, ser un lider en el manejo de proyectos</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Tecnico superior Universitario</h4>
+                        <span class="casa">Universidad Tecnologica de Zinacantepec</span>
+                        <span class="fecha">2020 - 2022</span>
+                        <p>Termine la carrera de tecnico superior en tecnologias de la informacion, en la cual puli mis Habilidades y conocimientos en programacion y manejo de redes</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ingenieria en Entornos Virtuales</h4>
+                        <span class="casa">Universidad Tecnologica de Zinacantepec</span>
+                        <span class="fecha">2022 - Actualmente</span>
+                        <p>Actualmente estoy estudiando mi ingenieria en la cual, he pulido mis Habilidades en programacion, manejo de redes y manejo de proyectos</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>manejo de Archivos(altas y bajas )</h4>
+                        <span class="casa">Obdapas San Mateo Atenco </span>
+                        <span class="fecha">2020 - 2021</span>
+                        <p>lleve acabo manejo de bases de datos de excel, asi comosolicitudes de trabajo, mayormente me dedique al manejo de archivo y trabajo de oficina</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Trabajo en ventas</h4>
+                        <span class="casa">pfizer</span>
+                        <span class="fecha">2021 - 2022</span>
+                        <p>Inicie el manejo de compra de servicios y busqueda de provedores de marketing, manejo de venta y de como se hacen las cotizaciones con diferentes provedores de materia prima. </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Desarrollo web y manejo de redes </h4>
+                        <span class="casa">Comision de Derechos Humanos del Estado de Mexico </span>
+                        <span class="fecha">2022 - 2022</span>
+                        <p>Desarrolle un sistema de servicio, en el cual se usaba para el manejo de altas y bajas de servicio, asi como instalacion de red y de cableado para conecxiones de equipos de computo.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño en Javascript</h3>
+                        <p>Animaciones</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño en HTML</h3>
+                        <p>Animaciones</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.png" alt="">
+                    <div class="overlay">
+                        <h3>Modificacion de Sitios web </h3>
+                        <p>Sitios web</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.png" alt="">
+                    <div class="overlay">
+                        <h3>Calculadoras</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://github.com/EdwinEstr"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/edwin-eduardo-estrada-calder%C3%B3n-0936a415b/"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+<!--Comentarios adicionales -->
+
+<!--Los iconoes he imagenes de facebook se sacaron del link o pagina siguiente https://fontawesome.com/v4/icon/github-->
+<!--Para hacer el cv se siguio un tutorial, no es hecho por IA ni nada por el estilo.-->
